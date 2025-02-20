@@ -1,0 +1,26 @@
+@startuml
+interface model.IBuilder {
+~ void buildTree(int,AnchorPane)
+~ void buildText(String,AnchorPane)
+~ void buildCircle(int,AnchorPane)
+~ Group getTree()
+}
+
+class model.SimpleBuilder {
+- Group treeGroup
+- Font font
++ void buildTree(int,AnchorPane)
++ void buildText(String,AnchorPane)
++ void buildCircle(int,AnchorPane)
++ Group getTree()
+}
+
+
+class model.Director {
++ Group build(IBuilder,AnchorPane,int)
+}
+
+
+
+model.IBuilder <|.. model.SimpleBuilder
+@enduml
