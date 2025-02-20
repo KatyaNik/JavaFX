@@ -1,0 +1,26 @@
+@startuml
+class model.StackX {
+- int maxSize
+- long[] stackArray
+- int top
++ void push(long)
++ long pop()
++ long peek()
++ boolean isEmpty()
++ boolean isFull()
++ String display()
+}
+
+
+class model.Adapter {
+~ StackX stack
++ void newStackElement(long)
++ void deleteStackElement()
++ long displayTopElement()
++ String StackCheck()
++ String displayElements()
++ String findElement(String)
+}
+
+
+@enduml
