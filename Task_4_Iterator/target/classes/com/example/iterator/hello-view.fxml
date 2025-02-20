@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+
+
+<Pane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iterator.HelloController">
+    <children>
+        <ImageView fx:id="imageView" fitHeight="324.0" fitWidth="572.0" layoutX="14.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" />
+        <Button fx:id="buttonPlay" layoutX="252.0" layoutY="390.0" mnemonicParsing="false" onAction="#buttonPlayPut" onMouseClicked="#buttonPlayPut" prefHeight="25" prefWidth="48.0" text="Пуск" />
+        <Button fx:id="buttonBack" onAction="#buttonBackClick" layoutX="190.0" layoutY="390.0" mnemonicParsing="false" text="Назад" />
+        <Button fx:id="buttonStop" layoutX="313.0" layoutY="390.0" onAction="#buttonStopPut" text="Пауза" />
+        <Button fx:id="buttonForward"  onAction="#buttonForwardClick" layoutX="372.0" layoutY="390.0" mnemonicParsing="false" text="Вперед" />
+        <Button fx:id="buttonChooseFolder" layoutX="111.0" layoutY="14.0" mnemonicParsing="false" onAction="#onActionButtonChooseFolder" text="Выбор каталога" />
+        <Label fx:id="label" layoutX="225.0" layoutY="14.0" prefHeight="25.0" prefWidth="362.0" text="Папка не выбрана" />
+        <Button fx:id="buttonBegin" onAction="#buttonBeginClick" layoutX="111.0" layoutY="390.0" mnemonicParsing="false" text="В начало" />
+        <Button fx:id="buttonEnd" onAction="#buttonEndClick" layoutX="438.0" layoutY="390.0" mnemonicParsing="false" text="В конец" />
+        <Button fx:id="buttonEn" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonEnClick" prefHeight="25.0" prefWidth="35.0" text="En" />
+        <Button fx:id="buttonRu" layoutX="60.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonRuClick" prefHeight="25.0" prefWidth="35.0" text="Ru" />
+
+    </children>
+</Pane>
