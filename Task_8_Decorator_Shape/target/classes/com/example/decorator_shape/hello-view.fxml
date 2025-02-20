@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane prefHeight="348.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.decorator_shape.HelloController">
+    <children>
+        <!-- Кнопки для создания фигур -->
+        <Button layoutX="389.0" layoutY="302.0" onAction="#drawTriangle" prefHeight="25.0" prefWidth="99.0" text="Треугольник" />
+        <Button layoutX="204.0" layoutY="301.0" onAction="#drawRectangle" text="Прямоугольник" />
+        <Button layoutX="23.0" layoutY="301.0" onAction="#drawLine" prefHeight="25.0" prefWidth="99.0" text="Линия" />
+
+        <!-- Область для рисования -->
+        <Pane fx:id="drawingArea" layoutX="23.0" layoutY="22.0" prefHeight="261.0" prefWidth="465.0" style="-fx-background-color: lightgray;" />
+    </children>
+</Pane>
