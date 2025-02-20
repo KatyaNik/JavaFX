@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="399.0" prefWidth="349.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task_10_adapter.HelloController">
+   <children>
+      <ListView fx:id="demoList" layoutX="16.0" layoutY="14.0" prefHeight="223.0" prefWidth="318.0" />
+      <Button fx:id="newButton" layoutX="233.0" layoutY="300.0" mnemonicParsing="false" onAction="#OnNewButtonClicked" prefHeight="39.0" prefWidth="101.0" text="Вставка" />
+      <Button fx:id="deleteButton" layoutX="14.0" layoutY="349.0" mnemonicParsing="false" onAction="#OndeleteButtonClicked" prefHeight="39.0" prefWidth="101.0" text="Удаление" />
+      <Button fx:id="findButton" layoutX="233.0" layoutY="349.0" mnemonicParsing="false" onAction="#OnfindButtonClicked" prefHeight="39.0" prefWidth="101.0" text="Поиск" />
+      <TextArea fx:id="textArea" layoutX="14.0" layoutY="300.0" prefHeight="39.0" prefWidth="210.0" promptText="Введите новый элемент" />
+      <TextArea fx:id="textArea1" layoutX="16.0" layoutY="250.0" prefHeight="39.0" prefWidth="210.0" promptText="Найденный элемент" />
+      <Button fx:id="CheckButton" layoutX="233.0" layoutY="250.0" mnemonicParsing="false" onAction="#OnCheckButtonClicked" prefHeight="39.0" prefWidth="101.0" text="Проверка" />
+      <TextField fx:id="textField" layoutX="125.0" layoutY="349.0" prefHeight="39.0" prefWidth="97.0" promptText="Введите число" />
+   </children>
+</Pane>
