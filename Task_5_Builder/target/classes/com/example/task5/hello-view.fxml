@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="613.0" prefWidth="468.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task5.HelloController">
+   <children>
+      <AnchorPane fx:id="anchorPane" layoutX="7.0" layoutY="6.0" prefHeight="556.0" prefWidth="453.0" />
+      <Button fx:id="buttonPaint" layoutX="373.0" layoutY="574.0" mnemonicParsing="false" onAction="#buttonPaintAction" text="Нарисовать" />
+      <TextField fx:id="textField" layoutX="14.0" layoutY="574.0" prefHeight="25.0" prefWidth="346.0" promptText="Введите отклонение макушки ёлки от 0 до 5" />
+   </children>
+</Pane>
