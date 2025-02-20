@@ -1,0 +1,34 @@
+@startuml
+class model.Line {
+- double length
+- double angle
+- double v
++ void draw(GraphicsContext)
+}
+
+
+class model.Hexagon {
++ void draw(GraphicsContext)
+}
+
+abstract class model.Shape {
+# double x
+# double y
+# Color color
+~ {abstract}void draw(GraphicsContext)
+}
+
+
+class model.Rectangle {
+- double width
+- double height
++ void draw(GraphicsContext)
+}
+
+
+
+
+model.Shape <|-- model.Line
+model.Shape <|-- model.Hexagon
+model.Shape <|-- model.Rectangle
+@enduml

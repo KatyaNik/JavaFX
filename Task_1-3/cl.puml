@@ -1,0 +1,18 @@
+@startuml
+class com.example.lab3.HelloController {
++ Canvas canvas
++ ColorPicker color
++ TextField textF
++ void onClick(ActionEvent)
+}
+
+
+class com.example.lab3.HelloApplication {
++ void start(Stage)
++ {static} void main(String[])
+}
+
+
+
+javafx.application.Application <|-- com.example.lab3.HelloApplication
+@enduml

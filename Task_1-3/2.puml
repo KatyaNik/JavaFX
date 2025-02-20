@@ -1,0 +1,61 @@
+@startuml
+class model.Line {
+- double length
+- double angle
++ void draw(GraphicsContext)
+}
+
+
+class model.Memento {
+- Shape snape
+- double x
+- Color color
++ Shape getState()
+}
+
+
+class model.ShapeFactory {
+- Map<Integer,BiFunction<Double,Double,Shape>> shapeMap
++ Shape createShape(int,double,double)
+}
+
+
+class model.Hexagon {
++ void draw(GraphicsContext)
+}
+
+abstract class model.Shape {
+# double x
+# double y
+# Color color
++ Color getColor()
++ void setColor(Color)
++ double getX()
++ double getY()
++ {abstract}void draw(GraphicsContext)
++ void setPosition(double,double)
++ void setX(double)
++ void setY(double)
+}
+
+
+class model.Rectangle {
+- double width
+- double height
++ void draw(GraphicsContext)
+}
+
+
+class model.MemoSelect {
++ Deque<Memento> mementoList
++ void push(Memento)
++ Memento poll()
+}
+
+
+
+
+model.Shape <|-- model.Line
+model.Shape <|-- model.Hexagon
+model.Shape <|-- model.Rectangle
+@enduml
