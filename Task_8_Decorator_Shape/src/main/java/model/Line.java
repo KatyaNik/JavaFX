@@ -9,7 +9,6 @@ public class Line extends ShapeDecorator{
         javafx.scene.shape.Line line = new javafx.scene.shape.Line(startX, startY, endX, endY);
         pane.getChildren().add(line);
     }
-
     @Override
     public void draw() {
         super.draw();

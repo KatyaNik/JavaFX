@@ -1,0 +1,37 @@
+@startuml
+class model.Line {
++ void draw()
+}
+
+class model.Triangle {
++ void draw()
+}
+
+interface model.IShape {
+~ void draw()
+}
+
+class model.ShapeDecorator {
+# IShape decoratedShape
++ void draw()
+}
+
+
+class model.Rectangle {
++ void draw()
+}
+
+class model.BaseShape {
+- Polygon polygon
++ void draw()
+}
+
+
+
+
+model.ShapeDecorator <|-- model.Line
+model.ShapeDecorator <|-- model.Triangle
+model.IShape <|.. model.ShapeDecorator
+model.ShapeDecorator <|-- model.Rectangle
+model.IShape <|.. model.BaseShape
+@enduml
