@@ -1,0 +1,74 @@
+@startuml
+class model.Line {
++ void draw(GraphicsContext,double,double)
+}
+
+class model.ShapeCell {
++ void updateItem(Shape,boolean)
+}
+
+class model.ShapeFactory {
+- Map<Integer,BiFunction<Double,Double,Shape>> shapeMap
++ Shape createShape(int,double,double)
+}
+
+
+abstract class model.Shape {
+# double x
+# double y
+# Color color
++ void setX(double)
++ void setY(double)
++ Color getColor()
++ void setColor(Color)
++ void setCircuit(GraphicsContext)
++ double getX()
++ double getY()
++ {abstract}void draw(GraphicsContext,double,double)
++ void setPosition(double,double)
++ Object clone()
+}
+
+
+class model.Circle {
++ double radius
++ int numPoints
++ String toString()
++ double area()
++ void setRadius(double)
++ void setNumPoints(int)
++ void draw(GraphicsContext,double,double)
+}
+
+
+class model.Rectangle {
+- double width
+- double height
++ void setHeight(double)
++ void setWidth(double)
++ String toString()
++ void draw(GraphicsContext,double,double)
+}
+
+
+class model.Hexagon {
++ String toString()
++ void draw(GraphicsContext,double,double)
+}
+
+class model.Triangle {
++ String toString()
++ double area()
++ void draw(GraphicsContext,double,double)
+}
+
+
+
+model.Shape <|-- model.Line
+javafx.scene.control.ListCell <|-- model.ShapeCell
+model.Cloneable <|.. model.Shape
+model.Shape <|-- model.Circle
+model.Shape <|-- model.Rectangle
+model.Shape <|-- model.Hexagon
+model.Shape <|-- model.Triangle
+@enduml
