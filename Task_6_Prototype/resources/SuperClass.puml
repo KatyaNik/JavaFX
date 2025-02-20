@@ -1,0 +1,41 @@
+@startuml
+abstract class com.example.lb2_javafx.Shape {
++ Color color
++ {abstract}double area()
+~ {abstract}void draw(GraphicsContext)
+}
+
+
+class com.example.lb2_javafx.Line {
++ double x
++ double y
++ double area()
++ void draw(GraphicsContext)
+}
+
+
+class com.example.lb2_javafx.Rectangle {
++ double length
++ double width
++ double area()
++ void draw(GraphicsContext)
+}
+
+
+class com.example.lb2_javafx.Triangle {
++ double area()
++ void draw(GraphicsContext)
+}
+
+class com.example.lb2_javafx.Circle {
++ double area()
++ void draw(GraphicsContext)
+}
+
+
+
+com.example.lb2_javafx.Shape <|-- com.example.lb2_javafx.Line
+com.example.lb2_javafx.Shape <|-- com.example.lb2_javafx.Rectangle
+com.example.lb2_javafx.Shape <|-- com.example.lb2_javafx.Triangle
+com.example.lb2_javafx.Shape <|-- com.example.lb2_javafx.Circle
+@enduml
