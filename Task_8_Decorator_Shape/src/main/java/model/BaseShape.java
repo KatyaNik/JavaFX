@@ -13,6 +13,9 @@ public class BaseShape implements IShape {
     public BaseShape(Color colorFill, Color colorStroke, Pane pane, double... points) {
         //this.polygon = new Polygon(points);
         //pane.getChildren().add(polygon);
+
+
+
         canvas = new Canvas(pane.getWidth(), pane.getHeight());
         pane.getChildren().add(canvas);
         // Получаем контекст рисования для панели
