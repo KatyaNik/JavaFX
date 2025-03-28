@@ -2,28 +2,16 @@
 
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
 <Pane prefHeight="377.0" prefWidth="510.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.decorator_shape.HelloController">
     <children>
-        <Button layoutX="23.0" layoutY="301.0" onAction="#drawLine" prefHeight="25.0" prefWidth="150.0" text="Линия" />
-
         <!-- Область для рисования -->
         <Pane fx:id="drawingArea" layoutX="23.0" layoutY="22.0" prefHeight="261.0" prefWidth="465.0" style="-fx-background-color: lightgray;" />
-      <ColorPicker fx:id="colorPickerStroke" layoutX="330.0" layoutY="338.0" prefHeight="25.0" prefWidth="158.0" />
-      <ColorPicker fx:id="colorPickerFill" layoutX="90.0" layoutY="338.0" prefHeight="25.0" prefWidth="158.0" />
-      <Label layoutX="23.0" layoutY="341.0" text="Контур:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
-      <Label layoutX="263.0" layoutY="341.0" text="Заливка:">
-         <font>
-            <Font size="14.0" />
-         </font>
-      </Label>
         <!-- Кнопки для создания фигур -->
+        <Button layoutX="23.0" layoutY="301.0" onAction="#drawLine" prefHeight="25.0" prefWidth="150.0" text="Линия" />
         <Button layoutX="338.0" layoutY="301.0" onAction="#drawTriangle" prefHeight="25.0" prefWidth="150.0" text="Треугольник" />
         <Button layoutX="181.0" layoutY="301.0" onAction="#drawRectangle" prefHeight="25.0" prefWidth="150.0" text="Прямоугольник" />
+      <CheckBox fx:id="addStrokeCheckBox" layoutX="197.0" layoutY="339.0" mnemonicParsing="false" onAction="#BordrerCh" text="Добавить контур" />
+      <!--<Button layoutX="181.0" layoutY="335.0" mnemonicParsing="false" onAction="#checkCurrentShape" text="Button" -->
     </children>
 </Pane>
