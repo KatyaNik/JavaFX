@@ -1,13 +1,13 @@
 package model;
 
+import javafx.scene.canvas.Canvas;
 import javafx.scene.layout.Pane;
 import javafx.scene.paint.Color;
 
 public class Triangle extends ShapeDecorator{
-    public Triangle(Color colorFill, Color colorStroke, IShape decoratedShape, Pane pane) {
+    public Triangle(Canvas canvas, Color colorFill, Color colorStroke, IShape decoratedShape, double... points) {
         super(decoratedShape);
-        double[] points = {50, 0, 100, 100, 0, 100};
-        new BaseShape(colorFill, colorStroke, pane, points);
+        new BaseShape( colorFill, colorStroke, canvas, points);
     }
 
     @Override
