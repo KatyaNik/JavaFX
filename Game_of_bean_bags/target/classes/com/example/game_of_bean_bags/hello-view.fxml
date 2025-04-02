@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.game_of_bean_bags.HelloController">
+   <children>
+      <TextField fx:id="capitalTextField" editable="false" layoutX="269.0" layoutY="93.0" prefHeight="30.0" prefWidth="97.0">
+         <font>
+            <Font size="14.0" />
+         </font></TextField>
+      <Button fx:id="Bag1Button" layoutX="59.0" layoutY="152.0" mnemonicParsing="false" onAction="#Bag1ButtonOnAction" prefHeight="97.0" prefWidth="138.0" />
+      <Button fx:id="Bag2Button" layoutX="231.0" layoutY="152.0" mnemonicParsing="false" onAction="#Bag2ButtonOnAction" prefHeight="97.0" prefWidth="138.0" />
+      <Button fx:id="Bag3Button" layoutX="411.0" layoutY="152.0" mnemonicParsing="false" onAction="#Bag3ButtonOnAction" prefHeight="97.0" prefWidth="138.0" />
+      <Button fx:id="PlayButton" layoutX="255.0" layoutY="281.0" mnemonicParsing="false" onAction="#OnActionPlayButton" text="Играть">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Label layoutX="152.0" layoutY="91.0" text="Выигрыш">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="informationButton" onAction="#OnActioninformationButton" layoutX="381.0" layoutY="94.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+   </children>
+</Pane>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="dd48cd24-b999-4f8d-8ca4-aed7047631e4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/com/example/game_of_bean_bags/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/com/example/game_of_bean_bags/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/com/example/game_of_bean_bags/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/images/1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/images/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/images/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/images/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/model/game_politics.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/model/wallet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Game_of_bean_bags/target/classes/module-info.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/task_8a_dao/HelloApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/task_8a_dao/HelloController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/com/example/task_8a_dao/hello-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/FileTaskDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/ListTaskDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/Task.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/TaskDAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/model/TaskFabrica.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="UML Sequence" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2ucWbaaQbisoExAIaRXUBmQLqQ0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.HelloApplication.executor": "Run",
+    "Application.Task_8A_DAO.executor": "Run",
+    "DefaultPlantUmlFileTemplate": "UML Sequence",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Университет/6 семестр/JavaFX/TasksGit/Task_8_Decorator_Shape",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Университет\6 семестр\JavaFX\TasksGit\Task_8A_DAO\src\data" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Task_8A_DAO" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="com.example.task_8a_dao.HelloApplication" />
+      <module name="Task_8A_DAO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="dd48cd24-b999-4f8d-8ca4-aed7047631e4" name="Changes" comment="" />
+      <created>1742548417028</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1742548417028</updated>
+    </task>
+    <servers />
+  </component>
+</project>
