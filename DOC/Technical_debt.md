@@ -2,8 +2,6 @@
 ```mermaid
 sequenceDiagram
     title Клиент-Серверная архитектура с взаимодействием с БД
-    config:
-        mirrorActors: false
     
     actor Клиент
     participant Сервер приложений as Сервер
@@ -18,7 +16,8 @@ sequenceDiagram
     БД-->>Сервер: Результат запроса
     deactivate БД
     
-    Серver--xКлиент: Ответ (JSON, XML и т.д.)
+    Сервер--xКлиент: Ответ (JSON, XML и т.д.)
     deactivate Сервер
+
 
 ```
