@@ -1,0 +1,164 @@
+@startuml
+class org.example.sessions.StudySession {
+- Question currentQuestion
+- BankQuestion questionBank
++ Question action()
++ boolean check(String)
++ String end()
++ State getState()
++ void setState(State)
+}
+
+
+class org.example.commands.LearnCommand {
++ Sender execute(SendMessage)
+}
+
+class org.example.senders.StudySender {
+- boolean waitingForAnswer
++ void onMessageReceived(String)
++ SendMessage createSendMessage()
+- String formatOptions(List<String>)
+}
+
+
+interface org.example.commands.Command {
+~ Sender execute(SendMessage)
+}
+
+class org.example.Main {
++ {static} void main(String[])
+}
+
+interface org.example.sessions.StateSession {
+~ Question action()
+~ boolean check(String)
+~ String end()
+~ State getState()
+~ void setState(State)
+}
+
+enum org.example.sessions.State {
++  INIT
++  ACTION
++  CHECK
++  END
++  ERROR
+}
+
+class org.example.model.Question {
+- String text
+- List<String> correctAnswers
+- List<String> wrongAnswers
++ String getQuestion()
++ List<String> getAnswerOptions()
++ boolean checkAnswer(String)
++ String getCorrectAnswers()
+}
+
+
+class org.example.sessions.ExamSession {
+- State state
++ Question action()
++ boolean check(String)
++ String end()
++ State getState()
++ void setState(State)
+}
+
+
+class org.example.commands.StudyCommand {
++ Sender execute(SendMessage)
+}
+
+class org.example.sessions.LearnSession {
+- Question currentQuestion
+- BankQuestion questionBank
++ Question action()
++ boolean check(String)
++ String end()
++ State getState()
++ void setState(State)
+}
+
+
+class org.example.model.BankQuestion {
+- List<Question> questions
+- void initializeQuestions()
++ Question getRandomQuestion()
++ List<Question> getQuestions(int)
+}
+
+
+class org.example.senders.ExamSender {
+- List<Question> examQuestions
+- int currentQuestionIndex
+- int totalQuestions
+- int correctAnswers
++ void onMessageReceived(String)
++ SendMessage createSendMessage()
+- String formatOptions(List<String>)
+}
+
+
+class org.example.Bot {
+- String BOT_TOKEN
+- String BOT_NAME
+- Map<Long,Sender> userSessions
++ String getBotUsername()
++ String getBotToken()
++ void onUpdateReceived(Update)
+- SendMessage handleMessage(long,String)
+- SendMessage createStartMessage(SendMessage)
+- SendMessage handleExamMode(long,SendMessage)
+- SendMessage handleStudyMode(long,SendMessage)
+- SendMessage handleLearnMode(long,SendMessage)
+- SendMessage handleUserResponse(long,String,SendMessage)
+- SendMessage ensureValidResponse(SendMessage)
+- void handleError(long,Exception)
+}
+
+
+class org.example.senders.LearnSender {
+- Question currentQuestion
+- String lastAnswer
++ void onMessageReceived(String)
++ SendMessage createSendMessage()
+- String formatOptions(List<String>)
+}
+
+
+class org.example.model.Examinator {
++ Question action()
++ boolean check(String)
++ String end()
+}
+
+class org.example.commands.ExamCommand {
+- int questionCount
++ Sender execute(SendMessage)
+}
+
+
+abstract class org.example.senders.Sender {
+# StateSession stateSession
+# long chatId
++ {abstract}void onMessageReceived(String)
++ {abstract}SendMessage createSendMessage()
++ StateSession.State getState()
+}
+
+
+
+
+org.example.sessions.StateSession <|.. org.example.sessions.StudySession
+org.example.commands.Command <|.. org.example.commands.LearnCommand
+org.example.senders.Sender <|-- org.example.senders.StudySender
+org.example.sessions.StateSession <|.. org.example.sessions.ExamSession
+org.example.commands.Command <|.. org.example.commands.StudyCommand
+org.example.sessions.StateSession <|.. org.example.sessions.LearnSession
+org.example.senders.Sender <|-- org.example.senders.ExamSender
+org.telegram.telegrambots.bots.TelegramLongPollingBot <|-- org.example.Bot
+org.example.senders.Sender <|-- org.example.senders.LearnSender
+org.example.commands.Command <|.. org.example.commands.ExamCommand
+@enduml
