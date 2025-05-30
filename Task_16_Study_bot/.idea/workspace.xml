@@ -4,35 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ad5416b4-2078-4ce6-b2c1-1a306937354e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Study_bot/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Study_bot/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/img.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/mod.puml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/Bot.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/commands/Command.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/commands/ExamCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/commands/LearnCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/commands/StudyCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/model/BankQuestion.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/model/Examinator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/model/Question.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/senders/ExamSender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/senders/LearnSender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/senders/Sender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/senders/StudySender.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/sessions/ExamSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/sessions/LearnSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/sessions/StateSession.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Study_bot/src/main/java/org/example/sessions/StudySession.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ad5416b4-2078-4ce6-b2c1-1a306937354e" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -68,7 +40,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Университет/6 семестр/JavaFX/TasksGit/Task_16_Study_bot"
+    "last_opened_file_path": "D:/Университет/6 семестр/JavaFX/TasksGit/Task_8A_DAО"
   }
 }]]></component>
   <component name="RunManager">

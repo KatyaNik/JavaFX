@@ -1,0 +1,68 @@
+@startuml
+interface model.TaskDAO {
+~ List<Task> getAllTasks()
+~ Task getTaskById(int)
+~ void addTask(Task)
+~ void updateTask(Task)
+~ void deleteTask(int)
+}
+
+class model.TaskFabrica {
++ {static} String BD
++ {static} String FILE
++ {static} String RAM
++ {static} TaskDAO createTaskDAO(String)
+}
+
+
+class model.FileTaskDAO {
+- String fileName
++ List<Task> getAllTasks()
++ Task getTaskById(int)
++ void addTask(Task)
++ void updateTask(Task)
++ void deleteTask(int)
+- void saveTasksToFile(List<Task>)
+}
+
+
+class model.Task {
+- SimpleIntegerProperty id
+- SimpleStringProperty login
+- SimpleStringProperty password
+- SimpleStringProperty time
+- SimpleStringProperty message
++ int getId()
++ void setId(int)
++ SimpleIntegerProperty idProperty()
++ String getLogin()
++ void setLogin(String)
++ SimpleStringProperty loginProperty()
++ String getPassword()
++ void setPassword(String)
++ SimpleStringProperty passwordProperty()
++ String getTime()
++ void setTime(String)
++ SimpleStringProperty timeProperty()
++ String getMessage()
++ void setMessage(String)
++ SimpleStringProperty messageProperty()
+}
+
+
+class model.ListTaskDAO {
+- List<Task> tasks
+- String randomTime(Random)
++ List<Task> getAllTasks()
++ Task getTaskById(int)
++ void addTask(Task)
++ void updateTask(Task)
++ void deleteTask(int)
+}
+
+
+
+
+model.TaskDAO <|.. model.FileTaskDAO
+model.TaskDAO <|.. model.ListTaskDAO
+@enduml
