@@ -95,6 +95,11 @@ public class FileTaskDAO implements TaskDAO {
         }
     }
 
+    @Override
+    public void saveAllTasks(List<Task> tasks) {
+        saveTasksToFile(tasks);
+    }
+
     private void saveTasksToFile(List<Task> tasks) {
         try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
             for (Task task : tasks) {

@@ -29,7 +29,26 @@ public class HelloController {
 
     private int id = 0;
     @FXML
+    public void DBButtonOnAction() {
+        // Получаем текущие задачи из таблицы
+        List<Task> currentTasks = fxtable.getItems();
+
+        // Создаем DAO для работы с БД
+        PostgresTaskDAO dbDao = new PostgresTaskDAO();
+
+        // Сохраняем все задачи в БД (с полной перезаписью)
+        dbDao.saveAllTasks(currentTasks);
+
+        // Загружаем задачи из БД для отображения
+        taskDAO = dbDao;
+        loadTasksFromDAO();
+    }
+    @FXML
     public void initialize() {
+        // Инициализация DAO с хранением в памяти по умолчанию
+        taskDAO = TaskFabrica.createTaskDAO(TaskFabrica.RAM);
+
+        // Инициализация колонок таблицы
         TableColumn<Task, Integer> idColumn = new TableColumn<>("ID");
         idColumn.setCellValueFactory(cellData -> cellData.getValue().idProperty().asObject());
 
@@ -44,8 +63,12 @@ public class HelloController {
 
         TableColumn<Task, String> messageColumn = new TableColumn<>("Сообщение");
         messageColumn.setCellValueFactory(cellData -> cellData.getValue().messageProperty());
+
         fxtable.getColumns().addAll(idColumn, loginColumn, passwordColumn, timeColumn, messageColumn);
         fxtable.setItems(fxlist);
+
+        // Загружаем начальные данные
+        loadTasksFromDAO();
     }
     @FXML
     public void deleteButtonOnAction() {
@@ -86,11 +109,22 @@ public class HelloController {
         passwordTextField.clear();
         messageTextField.clear();
     }
-    public void TXTButtonOnAction(){
-        String fileName = "src/data/tasks.txt";
-        taskDAO = new FileTaskDAO(fileName);
+    @FXML
+    public void TXTButtonOnAction() {
+        // Получаем текущие задачи из таблицы
+        List<Task> currentTasks = fxtable.getItems();
+
+        // Создаем DAO для работы с файлом
+        FileTaskDAO fileDao = new FileTaskDAO("src/data/tasks.txt");
+
+        // Сохраняем все задачи в файл (с полной перезаписью)
+        fileDao.saveAllTasks(currentTasks);
+
+        // Загружаем задачи из файла для отображения
+        taskDAO = fileDao;
         loadTasksFromDAO();
     }
+
     private void loadTasksFromDAO() {
         List<Task> tasks = taskDAO.getAllTasks();
         fxtable.getItems().clear(); 

@@ -1,14 +1,14 @@
 package model;
 
 public class TaskFabrica {
-    public static String BD = "база данных";
-    public static String FILE = "файл";
-    public static String RAM = "временно";
+    public static final String DB = "база данных";
+    public static final String FILE = "файл";
+    public static final String RAM = "временно";
 
     public static TaskDAO createTaskDAO(String type) {
         System.out.println("Переданный тип источника данных: " + type);
-        if (type.equalsIgnoreCase(BD)) {
-            throw new UnsupportedOperationException("База данных пока не поддерживается");
+        if (type.equalsIgnoreCase(DB)) {
+            return new PostgresTaskDAO();
         } else if (type.equalsIgnoreCase(FILE)) {
             return new FileTaskDAO("src/data/tasks.txt");
         } else if (type.equalsIgnoreCase(RAM)) {

@@ -16,7 +16,7 @@
       <Button layoutX="339.0" layoutY="278.0" mnemonicParsing="false" onAction="#saveButtonOnAction" prefHeight="25.0" prefWidth="88.0" text="Сохранить" />
       <Button layoutX="225.0" layoutY="321.0" mnemonicParsing="false" onAction="#deleteButtonOnAction" prefHeight="25.0" prefWidth="202.0" text="Удалить" />
       <Button fx:id="RAMButton"  onAction="#RAMButtonOnAction" layoutX="23.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="RAM" />
-      <Button fx:id="DatBaseButton" layoutX="161.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="DataBase" />
+      <Button fx:id="DatBaseButton" onAction="#DBButtonOnAction" layoutX="161.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="DataBase" />
       <Button fx:id="TXTButton" onAction="#TXTButtonOnAction" layoutX="298.0" layoutY="361.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="TXT" />
    </children>
 </Pane>
