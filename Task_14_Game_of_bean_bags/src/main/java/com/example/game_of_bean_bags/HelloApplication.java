@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 600, 400);
 
-        
+
 
         // Принудительная инициализация TooltipManager
         Tooltip.install(new Button(), new Tooltip("")); // Инициализация системы Tooltip
